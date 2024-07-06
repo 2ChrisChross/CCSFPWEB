@@ -1,0 +1,385 @@
+:root{
+    --headerfont: 46px;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+.schoolColors{
+    background-image: linear-gradient(to right, #ff0000 0, #ff0000 33%, #ffffff 33%, #ffffff 66%, #000Aff 66%, #000Aff 100%);
+    height:3px;
+    width: 100%;
+}
+
+a{
+    text-decoration: none;
+}
+
+ul{
+    list-style-type: none
+}
+
+body{
+    background-color: #F4F4F4;
+    margin: 0px;
+    display: flex;
+    flex-direction: column;
+}
+
+.SiteBody{
+    display: flex;
+    flex-direction: column;
+}
+
+
+/*navbar*/
+
+.navbar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+    background-color: white;
+}
+
+.navbarButtons{
+    display:flex;
+    flex-wrap: wrap;
+    position: relative;
+    right:200px;
+}
+
+.navbarButtons a:not(.enrollButton){
+    margin-right: 38px;
+    align-self: right;
+    font-size: 28px;
+    font-family: "Josefin Slab", serif;
+    color: #000000;
+    font-weight: 400;
+}
+
+.enrollButton{
+    font-size: 28px;
+    font-family: "Josefin Slab", serif;
+    font-weight: 400;
+}
+
+
+.logo{
+    align-self: left;
+    margin-right: 80%;
+    margin:26px;
+}
+
+/*navbar*/
+
+
+
+/*Hero?
+
+.img-with-text{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 700px 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    height: 700px;
+
+}
+
+
+.main-image{
+    position:absolute;
+    z-index: -2;
+    object-fit: cover;
+    object-position: 100% 75%;
+    width: 100%;
+    height:700px;
+}
+
+.text-containers{
+    display: grid;
+    grid-template-rows: 2;
+    grid-template-columns: 1;
+    grid-row: 2 / 2;
+    grid-column: 2 / 2;
+}
+
+.iwt-header{
+    color: white;
+    font-size: 120px;
+    font-family: "Inter";
+    font-weight: bolder;
+    grid-column: 1;
+    grid-row: 1;
+    justify-self: center;
+    align-self: end;
+    margin: 0px;
+}
+
+.iwt-sub{
+    color: white;
+    grid-column: 1;
+    grid-row: 2;
+    font-family: "Josefin Slab", serif;
+    font-weight: lighter;
+    font-size: 30px;
+    text-align: center;
+    justify-self: center;
+    align-self: start;
+    margin: 0px;
+    margin-top: 5px;
+
+}
+
+Hero?*/
+
+
+
+/*Main Content*/
+.main-content{
+    margin-top: 0px;
+    align-self: center;
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    grid-template-rows: 1fr;
+    width: 80%;
+    height: fit-content;
+}
+
+.navbar-about{
+    align-self: right;
+    display: flex;
+    flex-direction: column;
+    padding-top: 50px;
+    height: 300px;
+    align-items: end;
+    border-right: solid #000000 1px;
+    position: sticky;
+    top: 0px;
+    left: 0px;
+    align-self: flex-start;
+}
+
+
+.navbar-about-button{
+    text-decoration: none;
+    color:#000000;
+    font-family: 'Inter';
+    font-size: 20px;
+    margin-right: 20px;
+
+}
+
+/*Inline CSS for the "Currently Selected" for now.*/
+
+.navbar-about-button:hover{
+    text-decoration: none;
+    color:#ff0a0a;
+    font-family: 'Inter';
+    font-size: 20px;
+    margin-right: 20px;
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    margin-left: 1vw;
+    grid-area: 1 / 2 / span 1 / span 1;
+    height: fit-content;
+    margin-bottom: 4vh;
+}
+
+.content > div{
+    margin-top: 10vh;
+}
+
+.content img{
+    object-fit: cover;
+    height: 200px;
+    width: 100%;
+    object-position: 25% 50%;
+}
+
+.content h2{
+    font-family: 'Inter';
+    font-size: 50px;
+    font-weight: bold;
+    color: #161616;
+    margin-bottom: 5px;
+}
+
+.content h3{
+    font-family: 'Inter';
+    font-size: 20px;
+    font-weight: bold;
+    color: #616161;
+    margin-top: 0px;
+}
+
+.content p{
+    font-family: 'Inter';
+    font-size: 16px;
+    font-weight: normal;
+    text-align: justify;
+}
+
+#about-us-part{
+    background-color: #f5f5f5;
+    width: 80%;
+}
+
+#vision-mission{
+    margin-top: 10px;
+}
+
+.vis-mis-div{
+    display: flex;
+    justify-content: space-between;
+    align-self: center;
+    flex-direction: row;
+    gap:10%;
+}
+
+.vis-mis-div > div{
+    padding: 40px;
+    border-radius: 20%;
+}
+
+.vis-mis-div h3{
+    color: #000000a0;
+    font-size: 50px;
+}
+
+.vis-mis-div p{
+    text-align: justify;
+}
+
+.vision{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    background-color: hsla(0, 100%, 89%, 0.792);
+    box-shadow: #585858 0px 3px 4px;
+}
+
+.mission{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    background-color: hsla(220, 100%, 85%, 0.878);
+    box-shadow: #585858 0px 3px 4px;
+    filter: drop-shadow(100px);
+}
+
+#dean-info{
+    padding-top: 20px;
+}
+
+#dean-info img{
+    padding: 20px;
+    height: 20vw;
+    width: 20vw;
+    border-radius:100%;
+}
+
+.dean-content{
+    background-color: white;
+    display: grid;
+    grid-template-columns: 23vw 1fr;
+    grid-template-rows: 27% 1fr;
+    height: 23vw;
+    box-shadow: #585858 -3px 3px 4px;
+    border-radius: 20px;
+}
+
+
+.dean-content h2{
+    grid-area: 1 / 2 / span 1 / span 1;
+    align-self: start;
+    justify-self: start;
+    height: fit-content;
+    color: #5a5a5a;
+}
+
+
+.dean-content h3 {
+    grid-area: 2 / 2 / span 1 / span 1;
+    height: fit-content;
+}
+
+
+#faculty-info{
+    padding-top: 20px;
+}
+
+#faculty-info img{
+    padding: 20px;
+    height: 20vw;
+    width: 20vw;
+    border-radius:100%;
+}
+
+.faculty-content{
+    background-color: white;
+    display: grid;
+    grid-template-columns: 23vw 1fr;
+    grid-template-rows: 27% 1fr;
+    height: 23vw;
+    margin-top: 20px;
+    box-shadow: #585858 -3px 3px 10px;
+    border-radius: 20px;
+}
+
+
+.faculty-content-details {
+    display: flex;
+    flex-direction: column;
+    text-wrap: wrap;
+}
+
+.faculty-content-details h2{
+    color: #4f4f4f;
+}
+
+
+.instructs{
+    padding-bottom: 20px;
+    border: #000000 1px solid;  
+    border-radius: 10px;
+    width: fit-content;
+    padding: 20px;
+    background-color: white;
+    filter: drop-shadow(3px 3px 1px);
+    padding-bottom:2px;
+    padding-top:2px;
+    cursor: default;
+}
+
+
+/*Main Content*/
+
+
+
+/*Footer*/
+
+footer{
+    display: grid;
+    width: 100%;
+    height: 150px;
+    margin: 0px;
+    grid-template-columns: 1fr 500px 1fr;
+    grid-template-rows: 1fr;
+    background-color: white;
+    z-index: 999;
+}
+
+.fbt{
+    grid-column: 2 / span 1;
+    grid-row: 1 / span 1;
+    justify-self: center;
+    align-self: end;
+}
+
+/*Footer*/

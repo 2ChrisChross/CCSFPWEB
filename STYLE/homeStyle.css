@@ -1,0 +1,360 @@
+:root{
+    --headerfont: 46px;
+}
+
+
+.schoolColors{
+    background-image: linear-gradient(to right, #ff0000 0, #ff0000 33%, #ffffff 33%, #ffffff 66%, #000Aff 66%, #000Aff 100%);
+    height:3px;
+    width: 100%;
+}
+
+a{
+    text-decoration: none;
+}
+
+ul{
+    list-style-type: none
+}
+
+body{
+    background-color: #F4F4F4;
+    margin: 0px;
+}
+
+.siteBody{
+    display: flex;
+    flex-direction: column;
+
+}
+
+/*HeroSection*/
+
+.navbar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 90%;
+    align-items: center;
+
+}
+
+.navbarButtons{
+    display:flex;
+    flex-wrap: wrap;
+
+}
+
+.navbarButtons a:not(.enrollButton){
+    margin-right: 38px;
+    align-self: right;
+    font-size: 28px;
+    font-family: "Josefin Slab", serif;
+    color: white;
+    font-weight: 400;
+}
+
+.enrollButton{
+    font-size: 28px;
+    font-family: "Josefin Slab", serif;
+    font-weight: 400;
+}
+
+
+.logo{
+    align-self: left;
+    margin-right: 80%;
+    margin:26px;
+}
+
+
+.heroGradient{
+    background-image: linear-gradient(to right, black 14%, rgba(255, 255, 255, 0));
+    position: absolute;
+    height: 850px;
+    width: 100%;
+    z-index: -1;
+    
+}
+
+.Hero-Section{
+    background-image:url(../images/Home/Computers1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 850px;
+    width:100%;
+    background-position: center;
+    z-index: 2;
+}
+
+
+.HeroContainer1{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 500px;
+    justify-content: space-evenly;
+    font-family: 'Inter', sans-serif;
+    margin-left: 245px;
+    position: relative;
+    top:-80px;
+}
+
+.HeroButton{
+    color: white;
+    border: solid 1px red;
+    padding-right: 30px;
+    padding-left: 30px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    width: fit-content;
+    font-weight: bolder;
+    margin-top: 100px;
+    font-size: 25px;
+}
+
+
+.HeroContainer1 p{
+    margin:3px;
+}
+
+
+.HeroTextBig{
+    font-size: 200px;
+    font-weight:bolder;
+    color: blue;
+    font-family: 'Inter', sans-serif;
+    letter-spacing: -8px;
+    position: relative;
+    bottom:-60px;
+    left: -9px;
+}
+
+.HeroTextBig2{
+    font-size: 80px;
+    color: white;
+    font-weight:bolder;
+}
+
+.HeroTextSmall{
+    color: white;
+    font-weight: lighter;
+    font-size: 40px;
+}
+
+/*HeroSection*/
+
+
+/*EventsSection*/
+
+.Events-Section{
+    display: flex;
+    flex-direction: column;
+
+}
+
+.Upcoming{
+    align-self: center;
+    font-family: "Josefin Slab", serif;
+    font-weight: 600;
+    font-size: var(--headerfont);
+}
+
+.Upcoming p{
+        margin-bottom: 0px;
+}
+
+.Months{
+    justify-self: center;
+    align-self: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.Months li{
+    font-family: "Josefin Slab", serif;
+    font-weight: 600;
+    font-size: 30px;
+    margin-right: 4vw;
+    margin-top: 5vh;
+}
+
+.currentMonth{
+    text-decoration: underline;
+}
+
+
+.News-Section{
+    display: flex;
+    flex-direction: column;
+    width:100%;
+    height: 1000px;
+    position: relative;
+    top: 50px;
+}
+
+.NSText{
+    align-self: center;
+    font-family: "Josefin Slab", serif;
+    font-weight: 600;
+    font-size: var(--headerfont);
+    position: relative;
+    bottom: -30px;
+}
+
+.NewsContent{
+    align-self: center;
+    display: grid;
+    grid-gap:10px;
+    grid-template-columns: 400px 400px 400px;
+    grid-template-rows: 350px 350px;
+}
+
+.newscont{
+    border-radius: 20px;
+}
+
+.bigleft{
+    grid-column: span 2;
+    grid-row: span 2;
+    background-color: #000Aff;
+
+}
+
+
+.smallright-1{
+    grid-column: span 1;
+    grid-row: span 1;
+    background-color: #00ff62;
+}
+
+.smallright-2{
+    grid-column: span 1;
+    grid-row: span 1;
+    background-color: #ff0000;
+}
+
+/*EventsSection*/
+
+/*LearnMore*/
+
+.Learn-More{
+    position: relative;
+    top: 50px;
+    background-image:url(../images/Home/Building1.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 1000px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    
+}
+
+.ButtonsContainer{
+    position: relative;
+    left: calc((100%/4.6));
+    align-self: center;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    height: 40%;
+    width: 50%;
+    border-top: solid rgb(0, 4, 255) 2px;
+
+}
+
+
+.ButtonsAbout{
+    padding-left: 20px;
+    background-color: #ffffff;
+    width: 100%;
+    height: 100%;
+    font-family: "Josefin Slab", serif;
+    font-weight: 500;
+    font-size: 40px;
+    color: black;
+    align-content: center;
+
+}
+
+.ButtonsAbout:hover{
+    padding-left: 20px;
+    background-color: #b4b4b4;
+    width: 100%;
+    height: 100%;
+    font-family: "Josefin Slab", serif;
+    font-weight: 500;
+    font-size: 40px;
+    color: rgb(37, 0, 183);
+    align-content: center;
+
+}
+
+.ButtonsContainer a{
+    color:black;
+}
+
+.Left-Container{
+    height:100%;
+    background-color: black;
+    opacity: 0.8;
+
+}
+
+.LMAU{
+    position: relative;
+    top:31%;
+    left: calc((100%/4.6));
+    font-size: 100px;
+    color: white;
+    font-family: 'Inter', sans-serif;
+    font-weight: 800;
+    align-self: center;
+    height: 400px;
+    width: 700px;
+}
+
+
+/*LearnMore*/
+
+
+/*Companies*/
+
+.Connections{
+    position: relative;
+    margin-top: 100px;
+    margin-bottom: 80px;
+    align-content: center;
+    justify-content: center;
+    align-self: center;
+    justify-self: center;
+    width: 80%;
+    height: 200px;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    
+}
+
+/*Companies*/
+
+
+/*Footer*/
+
+footer{
+    display: grid;
+    width: 100%;
+    height: 150px;
+    margin: 0px;
+    grid-template-columns: 1fr 500px 1fr;
+    grid-template-rows: 1fr;
+    background-color: white;
+}
+
+.fbt{
+    grid-column: 2 / span 1;
+    grid-row: 1 / span 1;
+    justify-self: center;
+    align-self: end;
+}
+/*Footer*/

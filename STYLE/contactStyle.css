@@ -1,0 +1,197 @@
+:root{
+    --headerfont: 46px;
+}
+
+
+.schoolColors{
+    background-image: linear-gradient(to right, #ff0000 0, #ff0000 33%, #ffffff 33%, #ffffff 66%, #000Aff 66%, #000Aff 100%);
+    height:3px;
+    width: 100%;
+}
+
+a{
+    text-decoration: none;
+}
+
+ul{
+    list-style-type: none
+}
+
+body{
+    background-color: #F4F4F4;
+    margin: 0px;
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+/*navbar*/
+
+.navbar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+    background-color: white;
+}
+
+.navbarButtons{
+    display:flex;
+    flex-wrap: wrap;
+    position: relative;
+    right:200px;
+}
+
+.navbarButtons a:not(.enrollButton){
+    margin-right: 38px;
+    align-self: right;
+    font-size: 28px;
+    font-family: "Josefin Slab", serif;
+    color: #000000;
+    font-weight: 400;
+}
+
+.enrollButton{
+    font-size: 28px;
+    font-family: "Josefin Slab", serif;
+    font-weight: 400;
+}
+
+
+.logo{
+    align-self: left;
+    margin-right: 80%;
+    margin:26px;
+}
+
+/*navbar*/
+
+
+/*Content*/
+
+.SiteBody{
+    align-self: center;
+    height: 80vh;
+    width: 80vw;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+}
+
+
+.simple-form{
+    height: 70vh;
+    width: fit-content;
+    background-color: white;
+    align-self: center;
+    justify-self: center;
+    display: grid;
+    grid-template-columns: 80px 1fr 80px;
+    grid-template-rows: 30px 1fr 30px;
+    border-radius: 30px;
+    grid-column: 1 / 1;
+    grid-row: 1 / 1;
+    box-shadow: #002fff5c 0px 0px 10px;
+}
+
+.content-form{
+    grid-area: 2 / 2 / span 1/ span 1;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 5vh;
+}
+
+.content-form h3{
+    padding-top: 5vh;
+    font-size: 50px;
+    font-family: 'Inter';
+    font-weight: 500;
+    margin: 0px;
+}
+
+.content-form p{
+    font-size: 20px;
+    font-family: 'Inter';
+    font-weight: normal;
+}
+
+.content-form input{
+    margin-top: 5vh;
+    border:1px black solid;
+    height: 40px;
+    border-radius: 10px;
+    width: 23vw;
+}
+
+.content-form .big{
+    border: 1px black solid;
+    height: 16vh;
+    border-radius: 10px;
+    width: 23vw;
+    margin-top: 2vh;
+    resize: none;
+}
+
+.info{
+    background-color: white;
+    align-self: center;
+    justify-self: center;
+    width: 100%;
+    height: 70vh;
+    border-radius: 30px;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: space-evenly;
+    flex-wrap: wrap;
+    overflow: hidden;
+    box-shadow: #ff00005c 0px 0px 10px;
+}
+
+.info-text h2{
+    font-family: 'Inter';
+    font-size: 3vw ;
+    
+    margin-bottom: 10vh;
+}
+
+.g-map-1{
+    width: 40vw;
+    height: 40vh;
+
+}
+
+/*Content*/
+
+
+
+/*Footer*/
+
+footer{
+    display: grid;
+    width: 100%;
+    height: 100px;
+    margin: 0px;
+    grid-template-columns: 1fr 500px 1fr;
+    grid-template-rows: 1fr;
+    background-color: white;
+}
+
+.FooterBottomTxt{
+    grid-column: 2 / span 1;
+    grid-row: 1 / span 1;
+    justify-self: center;
+    align-self: end;
+}
+/*Footer*/
+
+
+
+/*Content*/
+
+
+
+/*Content*/
